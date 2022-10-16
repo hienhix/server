@@ -1,0 +1,63 @@
+io.on("connection", async (socket)=>{
+    socket.on("viewRoom",(data)=>{
+      console.log(data);
+      socket.broadcast.emit("listRoom",
+      [
+        {
+          img: "https://mfiles.alphacoders.com/916/916422.jpg",
+          vip:"1",
+          money:"99932132139ss9$",
+          players: [{
+            id:"dasdasd",
+            avarta:"https://mfiles.alphacoders.com/916/916422.jpg",
+            ingame:"sdad",
+          },{
+            id:"dasdasd",
+            avarta:"https://mfiles.alphacoders.com/916/916422.jpg",
+            ingame:"sdad",
+          }
+        ,{
+          id:"dasdasd",
+          avarta:"https://mfiles.alphacoders.com/916/916422.jpg",
+          ingame:"sdad",
+        },{
+          id:"dasdasd",
+          avarta:"https://mfiles.alphacoders.com/916/916422.jpg",
+          ingame:"sdad",
+        }]
+        },
+        {
+            img: "https://lvgames.net/lqm/wp-content/uploads/2020/11/Battle_Queen_Diana_Wallpaper_LOL_1200x675.jpg",
+            vip:"2",
+            money:"99932132199ss9$",
+            players: [{
+              id:"dasdasd",
+              avarta:"https://mfiles.alphacoders.com/916/916422.jpg",
+              ingame:"sdssssad"
+            }]
+          },
+          {
+            img: "https://mfiles.alphacoders.com/916/916422.jpg",
+            vip:"1",
+            money:"999s3213131s99$",
+            players: [{
+              id:"dasdasd",
+              avarta:"https://mfiles.alphacoders.com/916/916422.jpg",
+              ingame:"sda1212d",
+            }]
+          },
+          {
+              img: "https://lvgames.net/lqm/wp-content/uploads/2020/11/Battle_Queen_Diana_Wallpaper_LOL_1200x675.jpg",
+              vip:"2",
+              money:"121212$",
+              players: [{
+                id:"dasdasd",
+                avarta:"https://mfiles.alphacoders.com/916/916422.jpg",
+                ingame:"s43434dad"
+              }]
+            },
+        
+
+      ]);
+    });
+  })
